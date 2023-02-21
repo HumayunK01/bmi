@@ -5,15 +5,15 @@ function calculateBMI(){
     var result = document.getElementById('result');
 
     if(bmi < 18.5){
-        result.innerHTML = "Your BMI is " + bmi.toFixed(1) + ". You're underweight."
+        result.innerHTML = "Your BMI is " + bmi.toFixed(1) + "<br>" +"You're underweight."
     }
     else if (bmi >= 18.5 && bmi < 25) {
-        result.innerHTML = "Your BMI is " + bmi.toFixed(1) + ". You have a normal weight.";
+        result.innerHTML = "Your BMI is " + bmi.toFixed(1) + "<br>" + "You have a normal weight.";
     } 
     else if (bmi >= 25 && bmi < 30) {
-        result.innerHTML = "Your BMI is " + bmi.toFixed(1) + ". You are overweight.";
+        result.innerHTML = "Your BMI is " + bmi.toFixed(1) + "<br>" + "You are overweight.";
     } 
-    else {
-        result.innerHTML = "Your BMI is " + bmi.toFixed(1) + ". You are obese.";
+    else if (bmi > 30){
+        result.innerHTML = "Your BMI is " + bmi.toFixed(1) + "<br>" + "You are obese.";
     }
 }  
