@@ -64,8 +64,9 @@
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-.container .calculator .result {
+.container .calculator #result {
   margin: 20px 0;
   text-transform: capitalize;
   letter-spacing: 1px;
+  font-size: 18px;
 }

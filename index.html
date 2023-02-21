@@ -18,21 +18,20 @@
             <h1>BMI Calculator</h1>
             <div>
                 <label for="weight">Weight (in kg):</label>
-                <input type="text" id="weight" name="weight" minlength="1">
+                <input type="text" id="weight" name="weight" minlength="1" required>
             </div>
             <div>
                 <label for="height">Height (in cm):</label>
-                <input type="text" id="height" name="height" minlength="1">
+                <input type="text" id="height" name="height" minlength="1" required>
             </div>
             <div>
                 <input type="button" value="Calculate BMI" onclick="calculateBMI()" class="main-button">
             </div>
-            <div class="result">
+            <div id="result">
                 Your BMI will be shown here
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
 </body>
-
+<script src="script.js"></script>
 </html>
